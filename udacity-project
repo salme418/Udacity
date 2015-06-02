@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Udacity Project</title>
+  <style>
+    body {background-color: white;
+    color: navy;
+    }
+    .title {background-color: grey; 
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    }
+    .lesson {background-color: white;
+    color:black;
+    }
+    .lessontitle {background-color:white; 
+    color:orange;
+    font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="title">
+    The Basics of the Web and HTML
+  </div>
+  <br>
+  <div class="lessontitle">The Web:
+  </div>
+  <br>
+  <div class="lesson">
+    - Browsers use protocol HTTP to make requests from servers
+    <br> - Servers are computers that hostt the files that make up the internet
+  </div>
+  <br>
+  <div class="lessontitle">
+    HTML Overview:
+  </div>
+  <div class="lesson">
+    <br> - HyperTest Markup Language
+    <br> - Major language of the web
+    <br>- Text content (what you see)
+    <br> - Markup (what it looks like)
+    <br> - Other documents and links to other pages
+    <br>- Documents contain the (!DOCTYPE HTML) at the top and (html) opening and closing
+    <br> - The "head" of the document contains metadata (or javascript or CSS)
+    <br> - The "body" tag is made up of contents of the document
+    <br> - Attribute is a property of an HTML element (href)
+    <br>
+  </div>
+
+  <div class="lessontitle">
+    <br>Markup:</div>
+  <br>
+  <div class="lesson">
+    - Example: (opening tag)contents(/closing tag) made with less/greater than symbols
+    <br> - Complete contents with tags on either side are called "elements"
+    <br> - "b" tag makes font <b>bold</b>
+    <br> - "em" tag is emphasis tag and makes the font <em>italicized</em>
+  </div>
+
+
+  <br>
+  <div class="lessontitle">Links: </div>
+  <div class="lesson">
+    <br> - HTML Attributes
+    <br> - (tag ATTR="value")contents(/tag)
+    <br> - Example: (a href ="www.example.com")Homepage(/a)
+    <br> - <a href=udacity.com>A Real Link Example</a>
+    <br> - Image tag: (img src="url image" alt="text that displays if image does not load"> )
+    <br> - Image tags do not need a closing tag because they are "VOID" tags (a tag that has no content)
+    <br> - Real Example: <img src="http://www.udacity.com/cs253x/hipmunk.png" alt="hipmunk!">
+    <br> - It's not important to remember all these rules, because they are easily available with a simple web search
+  </div>
+  <br>
+  <div class="lessontitle">Whitespace:</div>
+  <div class="lesson">
+    <br> - (br) tag adds a line break
+    <br> - (br) is also a void tag
+    <br> - (p) tag adds a new paragraph
+    <br>- (p) tag is not a void tag and needs a closing (/p) tag
+    <br> - (br) tag is "inline", but (p) tag creates a box around the text
+    <br>
+  </div>
+  <br>
+  <div class="lessontitle"> Span/Div:</div>
+  <div class="lesson">
+    <br> - Span and div are both normal elements that can have content
+    <br> - Difference between Span and Div: Span is <em>inline</em> and Div is <em>block</em>
+    <br> - This means that (div) creates a box around the text and (span) does not
+    <br> - (form), (div) and (p) are all block elements
+    <br> - (a), (span), (br), (img), and (strong) are all <em>inline</em> (do not create a box)
+  </div>
+  <div>
+
+    <br>
+    <div class="title">HTML and CSS
+    </div>
+
+    <br>
+    <div class="lessontitle">How websites work </div>
+    <div class="lesson">
+      <br> - HTML is the structure
+      <br> - CSS files are the style
+      <br> - Java files are the interactove components
+      <br> - Sideways triangles are an HTML element
+      <br> - Each sideways triangle has an opening tag and closing tag
+      <br>
+      <br>
+    </div>
+
+    <div class="lessontitle">HTML:</div>
+    <div class="lesson">
+      <br> - Basic word in HTML language is a tag
+      <br> - Document Object Model creates the tree
+      <br> - An elements is created from starting tag to ending tag
+      <br> - Everything in between the tags is content
+      <br>
+      <br>
+    </div>
+
+    <div class="lessontitle">
+      CSS:</div>
+    <div class="lesson">
+      <br> - Syntax and rules to define style of the page
+      <br> - Everything on a web page is made up of rectangular elements
+      <br> - Class attributes are like labels on boxes
+    </div>
+    <br>
+  </div>
+  <div class="title">
+    CSS and HTML Structure</div>
+  <br>
+  <div class = "lessontitle">HTML Structure</div>
+  <br>
+  <div class = "lesson">
+    - Every start tags needs an end tag <br>
+    - Anything between the tags should be indented so that the code is easy to read <br>
+    - Every html doc needs an HTML doctype declaration followed by an HTML tag at the top of the page and another HTML tag at the end of the page <br>
+    - The file begins with a <em>head</em> section that has style information and is followed by a <em>body</em> section that includes content of the page <br>
+   
+  </div>
+  <br>
+  <div class="lessontitle"> CSS (Cascading Style Sheets)</div>
+  <div class="lesson">
+    <br> - Several CSS files or sheets can be referenced in HTML in order to find the style (visual appearance)
+    <br> - Most specific rule is applied (cascading)
+    <br> - Inheritance: mechanism by which properties are applied not only to a specific element, but also to its descendants*
+    <br> - Inheritance relies on the document tree, which is the hierarchy of (x)HTML elemnts in a page based on nesting*
+    <br> - Descendant elements may inherit CSS property values from any ancestor element enclosing them*
+    <br> - In general, descendant elements inherit text-related properties, but bot-related properties are not inherited*
+    <br> - In CSS, first write a "selector" that defines what elements the style on the page will apply to
+    <br> - Select elements by class (div class), by paragraph (p) or other elements (example: h1, h2)
+    <br> - Example to adjust color based on attribute of description: .description {attritute (color): value (red)}
+    <br> - Styling can be applied to specific "div"s by using appropriate selector
+    <br> - Example: ."item description" with semicolon and attribute (ie. color) afterwards
+    <br> - Changing element properties only chagnes how an element is displayed, not the underlying element 
+    <br> - By assigning properties to elements through classes or paragraph or element type, the page appearance can change dramatically without repeating the style over and over for each separate element 
+    
+    
+  </div>
+  <br>
+  <div class="lessontitle">Element Boxes</div>
+  <div class="lesson">
+    <br> - Elements boxes are made up of 4 components: margin, border, padding and the actual content in the center
+    <br> - To learn more about specific colors, look up a CSS color reference online
+    <br> - CSS properties should be listed under <em>style</em> section in the <em>head</em> portion of the HTML document
+    <br> - CSS properties can also be contained in a second file, which the main file links to in the <em>head</em> section
+    <br> - in CSS code comments begin with '/*' and end with '*/'
+    <br> - Tags should reflect the purpose of each element
+    <br> - Box-sizing (example: box-sizing: border-box;) can be used to adjust border and padding at the same time by defininig width of overall box (margin not included)
+    <br> - Box-sizing method has been developed recently so <em>browser specific prefixes</em> in front of the style definition
+    <br> - Prefixes are: -webkit, -moz, and -ms
+    <br> - Boxes are normally defined in pixels, but can also be adjusted as a percentage
+    <br> - If boxes are set as a percentage, size will change depending on size of the screen
+    <br> - It's important to be careful because a bad user experience may occur when percentage is used
+    <br> - Max width may also be defined to fix the user problems when using a percentage
+    <br> - Flex box is a method to layout a line and distribute space inside a container (ie. div)
+    <br> - Use <em>flex box</em> by changing value of parent container to value <em>flex</em>
+    <br> - For flex to work items need to have a size that is smaller than default 100%
+    <br>
+    <br>
+  </div>
+  <div class="lessontitle"> Method of writing CSS </div>
+  <br>
+  <div class="lesson">
+    - CSS code is written through test, model, refine then repeat
+    <br> - Make structure of page first (boxifying), then work on tags, then work on box sizing, then how to position them on the screen
+    <br> - After general layout is complete, work on smaller details
+    <br> - Begin by looking for natural boxes, then look for repeated styles and semantic elements, then write HTML, then apply styles from biggest to smallest, then fix things until website looks like design mock
+    <br> - Dev tools can be used in chrome to test changes without actually changing the code of the website
+    <br>
+
+
+  </div>
+
+  <br>
+
+  <div class="lesson">
+    *sourced from <a href=http://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)inheritance> wikipedia article</a> on inheritance
+    <br>
+    <br>
+  </div>
+
+  <div class="title">Intro to Python</div>
+  <br>
+  <div class="lessontitle">Python</div>
+  <div class="lesson">
+    <br> - Natural languages are ambiguous and verbose
+    <br> - Python has grammer (syntax)
+    <br> - Example: (non-terminal) arrow (replacement)
+    <br> - Form a sentence by starting with a non-terminal and apply the replacement
+    <br> - Terminals are never placed on the left side of an equation
+    <br> - Derivation means following a sequence of <em>non-terminals</em>, follow the rules to arrive at <em>terminals</em>
+    <br> - Python grammar must match exactly
+    <br> - Expression is something that has a value
+  </div>
+  <br>
+  <div class="lessontitle">The Variable</div>
+  <div class="lesson">
+    <br> - A <b>variable</b> creates a name that can be substituted for any value
+    <br> - <b>Assign</b> a value to a variable using an <b> assignment statement</b> (name=expression)
+    <br> - Comments can be made using a hash symbol that are not interpreted by the Python interpreter
+    <br> - Variables can change
+    <br> - In python the equals signs is an arrow, not an equivalent sign
+    <br> - A <b>"string"</b> in Python is a sequence of characters contained in quotes
+    <br> - Doesn't matter if strings use 'single quotes' or "double quotes"
+    <br> - Variables do not usually use capital letters
+    <br>
+  </div>
+  <br>
+  <div class="lessontitle">Indexing Strings</div>
+  <div class="lesson">
+    <br> - Subsequences can be extracted from strings by using square brackets
+    <br> - Characters of a string are indexed beginning with 0
+    <br> - Form: (string)square bracket(expression)square bracket
+    <br> - Example: 'udacity'[0]
+    <br> - When you use negative numbers, the indexing begins counting from the back of the string
+    <br>
+    <br>
+  </div>
+  <div class="lessontitle">Finding Strings in Strings</div>
+  <div class="lesson">
+    <br> - <b>Find</b> is a method (a built-in procedure prgrammed in Python)
+    <br> - Find is a procedure that operates on strings
+    <br> - Format: "string".find("string")
+    <br> - Find will give the first position in the search string where the target string appears
+    <br> - If target string is not found, function will results in -1
+    <br> - Capitalization does matter in the search
+  </div>
+  <br>
+  <br>
+  <div class="lessontitle">Finding with Numbers</div>
+  <div class="lesson">
+    <br> - Add a second parameter to find other occurrences besides the first one
+    <br> - Example: string.find(string.character # where search should begin)
+    <br> - Finding a second occurence use the equation stng.find('needle', needle +1), while using a variable (in the example it's 'needle" to find the first occurrence)
+  </div>
+  <br>
+  <div class="lessontitle">Using Procedures </div>
+  <div class="lesson">
+    <br> - <em>def </em> gives instructions for procedures
+    <br> - <em>return</em> is the output
+    <br> - Before you can use a procedure, you need to assign <em>def </em> and <em>return</em>
+    <br> - Form: procedure name (input, input,...)
+    <br> - Number of inputs needs to match the number of inputs the procedure expects
+    <br> - Inputs are also called operands and arguments
+    <br> - Example: def inc(n):
+    <br> Return: n +1
+    <br> - In procedures a "+" symbol takes inputs and concatenates them to produce an output
+    <br>
+  </div>
+  <br>
+  <div class="lessontitle">If and While</div>
+  <div class="lesson">
+    <br> - <em>If </em>operator:(expression) or (expression): if the first expression evaluates to True, the value is True and the second expression is not evaluated
+    <br> - <em>If</em> Operator: If the value of the first expression is false, the value is the value of the second expression
+    <br> - <em>While</em> operator can operate any number of times and keeps going as long as the test expression is true
+    <br> - Example: While (test expression):
+    <br>(block)
+    <br> - Once the test expression is false, the loop stops
+    <br> - <em>Break</em> expression can be placed under the <em>while</em> as an <em>if</em> clause
+    <br>
+  </div>
+  <br>
+  <div class="lessontitle">Debugging</div>
+  <div class="lesson">
+    <br> - Python gives a traceback for bugs
+    <br> - When code doesn't work, copy and paste example good and modify it to do what you want it to
+    <br> - Keep and compare older versions by placing a hashmark in front of them when debugging and making new versions of the code
+    <br>
+  </div>
+  <br>
+  <div class="title">Data</div>
+  <br>
+  <div class="lessontitle">Lists</div><br>
+  <div class="lesson">
+    - <em>Strings</em> only allow the user to work with a sequence of characters, but <em>Lists</em> allow users to work with sequences of anything
+    <br> - <em>Strings</em> use quotes to identify themselves, and are assigned to a variable with an equivalent sign <br>
+    - <em>Lists</em> use square brackets to identify themselves and commas to separate, with an equivalent sign to assign a variable <br>
+    - <em>Strings</em> use square brackets to select elements and element 0 is the first character of a string <br>
+    - <em>Lists</em> also use square brackets to select elements, and 0 is also the first element of the list <br>
+    - Selecting subsequences in <em>lists</em> will give the selected list <br>
+    - Example: p[2:4] will return the second through fourth list <br>
+    - <em>Lists</em> are indexed beginning with the number zero <br><br>
+    <div class = "lessontitle">Mutations</div><br>
+    <div class = "lesson">
+    - <em>Lists</em> support <em>mutations</em>, which means the value of the list can change after it has been created <br>
+    - <em>Mutations</em> mean the new value is not a modified previous string, but a completely new string in itself <br>
+    - Mutation example: p[0]= 'y' will change the first letter of the existing string to y<br>
+    - If p=q, then any mutations that occur in p, will also occur in q <br>
+    - <em> Aliasing</em> is when we have two ways to refer to the same object (example: p=q)
+
+
+</html>
